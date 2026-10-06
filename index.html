@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- TIMER -->
+    <section class="timer">
+          <h2 id="modeLabel">FOCUS</h2>
+          <h1 id="time">25:00</h1>
+      <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+      <div class="modes"> 
+  <button id="shortBtn">Short</button>
+  <button id="longBtn">Long</button>
+</div>
+    </section>
+
+    <!-- TASKS -->
+    <section class="tasks">
+      <h2>Tasks</h2>
+
+      <div class="task-input">
+        <input id="taskInput" type="text" placeholder="New task..." />
+        <button id="addTaskBtn">Add</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </section>
+    <div class="progress">
+  <div id="progressBar"></div>
+</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
